@@ -38,6 +38,7 @@ GET http://localhost:8000/api/client/{phone_number}
     "error": "Client not found"
 }
 
+```
 ![image](https://github.com/balguzh1nov/test_laravel/assets/118799235/62cb8f04-a8dc-495f-82f3-6201ed6a0815)
 ![image](https://github.com/balguzh1nov/test_laravel/assets/118799235/bd6b3216-2423-44a5-8fc5-8a8e0a2b3dc5)
 ![image](https://github.com/balguzh1nov/test_laravel/assets/118799235/e7e1bdfd-8a75-4ce8-8f8d-8f11a77b7e12)
