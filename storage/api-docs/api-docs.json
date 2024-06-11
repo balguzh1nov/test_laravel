@@ -1,0 +1,95 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Client Management API",
+        "description": "API для управления клиентами",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/client/{phone_number}": {
+            "get": {
+                "tags": [
+                    "Clients"
+                ],
+                "summary": "Get client information",
+                "description": "Get client information by phone number",
+                "operationId": "2275ba449b1e1ecb878911e49ac560d9",
+                "parameters": [
+                    {
+                        "name": "phone_number",
+                        "in": "path",
+                        "description": "Phone number of the client",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer"
+                                        },
+                                        "phone_number": {
+                                            "type": "string"
+                                        },
+                                        "full_name": {
+                                            "type": "string"
+                                        },
+                                        "accumulated_points": {
+                                            "type": "integer"
+                                        },
+                                        "created_at": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "updated_at": {
+                                            "type": "string",
+                                            "format": "date-time"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Client not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
