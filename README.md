@@ -4,8 +4,6 @@
 
 ### 1. Клонирование репозитория
 
-Клонируйте репозиторий на ваше локальное устройство:
-
 ```sh
 git clone https://github.com/balguzh1nov/test_laravel.git
 cd client-management
