@@ -6,7 +6,7 @@
 
 ```sh
 git clone https://github.com/balguzh1nov/test_laravel.git
-cd client-management
+cd test_laravel
 
 Убедитесь, что настройки подключения к базе данных корректны:
 DB_CONNECTION=pgsql
